@@ -138,14 +138,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Lab4_OOP\Lab4_OOP\App.cpp" />
     <ClCompile Include="..\..\Lab4_OOP\Lab4_OOP\controller.cpp" />
     <ClCompile Include="..\..\Lab4_OOP\Lab4_OOP\medikament.cpp" />
     <ClCompile Include="..\..\Lab4_OOP\Lab4_OOP\repo.cpp" />
+    <ClCompile Include="..\..\Lab4_OOP\Lab4_OOP\UI.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Lab4_OOP\Lab4_OOP\App.h" />
     <ClInclude Include="..\..\Lab4_OOP\Lab4_OOP\controller.h" />
     <ClInclude Include="..\..\Lab4_OOP\Lab4_OOP\medikament.h" />
     <ClInclude Include="..\..\Lab4_OOP\Lab4_OOP\repo.h" />
+    <ClInclude Include="..\..\Lab4_OOP\Lab4_OOP\UI.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
