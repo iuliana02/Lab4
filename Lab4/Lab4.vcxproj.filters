@@ -18,9 +18,21 @@
     <ClCompile Include="..\..\Lab4_OOP\Lab4_OOP\medikament.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Lab4_OOP\Lab4_OOP\repo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Lab4_OOP\Lab4_OOP\controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Lab4_OOP\Lab4_OOP\medikament.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4_OOP\Lab4_OOP\controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lab4_OOP\Lab4_OOP\repo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
