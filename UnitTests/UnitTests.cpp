@@ -81,13 +81,7 @@ namespace UnitTests
 			Assert::AreEqual(actual4, expected4);
 		}
 
-		TEST_METHOD(TestModify)
-		{
-			auto ctrl = Controller();
-			Medikament med = Medikament("Nospa", 200, 35, 23.95);
-			ctrl.add(med);
 
-		}
 	};
 
 }
