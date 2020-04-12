@@ -72,65 +72,19 @@ namespace UnitTests
 				auto expected4 = false;
 				Assert::AreEqual(actual4, expected4);
 			}
-
+			
+			/*
 			TEST_METHOD(TestModify)
 			{
 				auto ctrl = Controller();
 				Medikament med = Medikament("Nospa", 200, 35, 23.95);
 				ctrl.add(med);
 
+				//functia de update pe care nu stiu de ce nu o gaseste
+
 			}
-			/*TEST_METHOD(TestModify)
-			{
-				Medikament med = Medikament("Nurofen", 90, 20, 20.00);
-				auto ctrl = Controller();
-				auto actual = ctrl.search(med);
-				auto expected = true;
-				Assert::AreEqual(actual, expected);
+			*/
 
-			//	ctrl.modify(med);
-
-			//	auto actual = ctrl.search(med);
-			//	auto expected = false;
-			//	Assert::AreNotEqual(actual, expected);
-			//}*/
-			///*TEST_METHOD(modifyNameTest)
-			//{
-			//	auto med = new Medikament("Nurofen", 90, 20, 20.00);
-
-			//	med->get_menge -= 10;
-			//	med->get_preis += 5;
-			//	Assert::AreEqual(med->modify());
-			//}*/
-			//TEST_METHOD(TestUndoUpdate)
-			//{
-			//	Medikament med = Medikament("Nurofen", 90, 20, 20.00);
-			//	auto ctrl = Controller();
-			//	auto actual = ctrl.search(med);
-			//	auto expected = true;
-			//	Assert::AreEqual(actual, expected);
-
-			//	ctrl.modify(med);
-
-			//	auto actual = ctrl.search(med);
-			//	auto expected = false;
-			//	Assert::AreNotEqual(actual, expected);
-
-			//	ctrl.undo_update(med);
-
-			//	auto actual = ctrl.search(med);
-			//	auto expected = true;
-			//	Assert::AreEqual(actual, expected);
-			//}
-
-			//TEST_METHOD(TestKnappeMenge)
-			//{
-			//	auto ctrl = Controller();
-			//	Medikament med = Medikament("Nospa", 200, 35, 23.95);
-			//	Medikament med2 = Medikament("Nurofen", 90, 20, 20.00);
-			//	ctrl.knappe_menge(30);
-			//	
-			//}
 		};
 	
 }
