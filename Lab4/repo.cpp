@@ -8,7 +8,7 @@ Repo::Repo()
 {
 	this->capacity = 100;
 	this->len = 0;
-	this->med = new Medikament[capacity];
+	this->med = new Medikament[capacity]; //array de medicamente
 }
 
 

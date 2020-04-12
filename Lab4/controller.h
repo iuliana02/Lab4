@@ -2,6 +2,7 @@
 #include "repo.h"
 #include <iostream>
 
+//pentru operatiile de redo si undo
 struct action
 {
 	Medikament m;
@@ -26,6 +27,7 @@ public:
 	void add(Medikament m);
 	void remove(Medikament m);
 	void modify(Medikament m);
+	bool update(Medikament m, int menge, double preis);
 
 	void show(string s);
 
@@ -39,5 +41,7 @@ public:
 	void undo_remove(Medikament m);
 	void undo_add(Medikament m);
 	void undo_update(Medikament m);
+
+	void name_sort();
 
 };

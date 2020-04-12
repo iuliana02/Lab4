@@ -30,4 +30,8 @@ public:
 	void afisare();
 
 	~Medikament();
+
+	Medikament& operator +=(int menge);
+	Medikament& operator -=(int menge);
+
 };

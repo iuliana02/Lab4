@@ -12,7 +12,7 @@ UI::~UI()
 
 void UI:: meniu()
 {
-	cout << "\tSmile Apotheke\n";
+	cout << "\n\tSmile Apotheke\n";
 	cout << "1 - Medikament einfugen\n" << "2 - Medikament loschen\n" << "3 - Medikament bearbeiten\n";
 	cout << "4 - Gruppieren nach einem String\n";
 	cout << "5 - Medikamente knapper als...\n";
@@ -85,7 +85,7 @@ void UI::functii()
 			cout << "Primele litere din numele medicamentului: \n";
 			getline(cin, s);
 			getline(cin, s);
-			if (s == "")
+			if (s == "") //daca am string gol, afisez toate medicamentele
 			{
 				cout << "The string is empty!/n";
 				ctrl.name_sort();
@@ -122,7 +122,7 @@ void UI::functii()
 			cout << "Operatia de redo a reusit." << endl;
 			break;
 		}
-		default:
+		case 0:
 			return;
 		}
 	}

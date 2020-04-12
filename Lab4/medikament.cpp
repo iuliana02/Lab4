@@ -62,9 +62,23 @@ void Medikament::remove_menge(int m)
 
 void Medikament::afisare()
 {
-	cout << "Name: " << name << "Konzentration: " << konzentration << "Menge: " << menge << "Preis: " << preis << '\n';
+	cout << " Name: " << name << " Konzentration: " << konzentration << " Menge: " << menge << " Preis: " << preis << '\n';
 }
 
 Medikament::~Medikament()
 {
+}
+
+Medikament& Medikament::operator+= (int menge)
+{
+	this->menge += menge;
+	return *this;
+}
+
+Medikament& Medikament::operator-=(int menge)
+{
+	if (this->menge < menge)
+		throw std::exception("Nu se poate scadea");
+	this->menge -= menge;
+	return *this;
 }
