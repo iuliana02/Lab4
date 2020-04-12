@@ -73,17 +73,22 @@ namespace UnitTests
 				Assert::AreEqual(actual4, expected4);
 			}
 			
-			/*
+			
 			TEST_METHOD(TestModify)
 			{
 				auto ctrl = Controller();
 				Medikament med = Medikament("Nospa", 200, 35, 23.95);
 				ctrl.add(med);
 
-				//functia de update pe care nu stiu de ce nu o gaseste
+				auto actual = ctrl.search(med);
+				auto expected = true;
+				Assert::AreEqual(actual, expected);
+
+				bool ok = ctrl.update(med, 10, 7);
+				Assert::AreEqual(ok, true);
 
 			}
-			*/
+			
 
 		};
 	
