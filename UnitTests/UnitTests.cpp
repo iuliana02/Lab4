@@ -73,20 +73,20 @@ namespace UnitTests
 				Assert::AreEqual(actual4, expected4);
 			}
 
-			//TEST_METHOD(TestModify)
-			//{
-			//	auto ctrl = Controller();
-			//	Medikament med = Medikament("Nospa", 200, 35, 23.95);
-			//	ctrl.add(med);
+			TEST_METHOD(TestModify)
+			{
+				auto ctrl = Controller();
+				Medikament med = Medikament("Nospa", 200, 35, 23.95);
+				ctrl.add(med);
 
-			//}
-			///*TEST_METHOD(TestModify)
-			//{
-			//	Medikament med = Medikament("Nurofen", 90, 20, 20.00);
-			//	auto ctrl = Controller();
-			//	auto actual = ctrl.search(med);
-			//	auto expected = true;
-			//	Assert::AreEqual(actual, expected);
+			}
+			/*TEST_METHOD(TestModify)
+			{
+				Medikament med = Medikament("Nurofen", 90, 20, 20.00);
+				auto ctrl = Controller();
+				auto actual = ctrl.search(med);
+				auto expected = true;
+				Assert::AreEqual(actual, expected);
 
 			//	ctrl.modify(med);
 
